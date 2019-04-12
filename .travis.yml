@@ -13,3 +13,6 @@ script:
 # Run with python the module 'unittest'
   - coverage erase
   - coverage run -m pytest && coverage html
+
+after_success:
+  - codecov
