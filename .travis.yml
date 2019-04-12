@@ -11,4 +11,5 @@ install:
 # Script phase
 script:
 # Run with python the module 'unittest'
-  - python -m unittest discover
+  - coverage erase
+  - coverage run -m pytest && coverage html
