@@ -1,0 +1,14 @@
+
+# Specifying the language to run the script in
+# For more info, see https://docs.travis-ci.com/user/languages/python/
+language: Python
+python:
+  - '3.6'
+# Install phase
+install:
+  - pip install -r requirements.txt
+
+# Script phase
+script:
+# Run with python the module 'unittest'
+  - python -m unittest discover
